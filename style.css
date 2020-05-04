@@ -14,7 +14,7 @@ nav{
 }
 
 .logo{
-  color: #ffffff;
+  color: #00ff0d;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
@@ -46,8 +46,9 @@ nav{
 .burger div{
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: #D8DEE9;
   margin: 5px;
+  transition: all 0.3s ease;
 }
 
 @media screen and (max-width:1024px){
@@ -70,6 +71,7 @@ nav{
       align-items: center;
       width: 50%;
       transform: translateX(100%);
+      transition: transform 0.5s ease-in;
     }
 
     .nav-links li{
@@ -80,4 +82,29 @@ nav{
       display: block;
     }
 
+}
+
+.nav-active{
+  transform:translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }to{
+    opacity: 1;
+    transform: translateX(0px);
+     }
+
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px, -6px);
 }
