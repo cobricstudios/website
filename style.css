@@ -51,12 +51,59 @@ strong{
   list-style: none;
 }
 
+.product {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap;
+}
+
+.card {
+  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+  max-width: 300px;
+  margin-top: 2%;
+  margin-bottom: 15px;
+  margin-left: 10%;
+  margin-right: 15px;
+  text-align: center;
+  background-color: #303030;
+}
+
+.price {
+  color: #c1c1c1;
+  font-size: 22px;
+  font-family: Poppins, sans-serif;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #212121;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  transition: 0.3s;
+  font-family: Poppins, sans-serif;
+}
+
+.card button:hover {
+  background-color: rgba(98, 224, 52, 0.66);
+}
+
+
 .nav-links a{
   color: #ffffff;
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 14px;
+}
+
+h2{
+  color: white;
+  font-family: Poppins, sans-serif;
 }
 
 .burger{
@@ -81,7 +128,6 @@ strong{
 @media screen and (max-width:768px){
     body{
       overflow: hidden;
-      background: #2E3440;
     }
     .nav-links{
       position: absolute;
